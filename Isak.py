@@ -1,5 +1,5 @@
 name = input("Hej vad heter du?")
-if name in ["Frozen", "frozen", "Frozen plays", "frozen plays", "Isak", "isak"]: 
+if name in ["Frozen", "Frozen plays", "frozen plays", "Isak", "isak"]: 
     print("Du är Isak")
 else: 
     print("Välkommen!", name)
