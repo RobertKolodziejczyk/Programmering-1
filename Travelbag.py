@@ -1,4 +1,4 @@
-travelbag = []
+travelbag = ["Robert"]
 
 while True:
    menyval = input("1. Kolla i resväskan\n"
@@ -7,14 +7,15 @@ while True:
                    "4. Avsluta program \n")
 
    if menyval == "1":
-    print(*travelbag)
+    for i, nej in enumerate (travelbag, start=1):
+      print(i, nej,)
 
    elif menyval == "2":
-     tillägg = input("Vad vill du lägga till? ").split(" ")
+     tillägg = input("Vad vill du lägga till? ").capitalize()
      travelbag.append(tillägg)
 
    elif menyval == "3":
-    tabort = input("Vad vill du ta bort? ").split(" ")
+    tabort = input("Vad vill du ta bort? ").capitalize()
     travelbag.remove(tabort)
 
    elif menyval == "4":
